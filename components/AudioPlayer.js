@@ -61,7 +61,7 @@ const AudioPlayer = () => {
     setCurrentTime(progressBar.current.value);
   };
 
-  const backThirty = () => {
+  const backTen = () => {
     progressBar.current.value = Number(progressBar.current.value - 10);
     changeRange();
   };
@@ -92,7 +92,7 @@ const AudioPlayer = () => {
       </div>
 
       <div className={styles.audioPlayer}>
-        {/* <button onClick={alert}>Hej</button> */}
+        {/* <button onClick={alert}>Test</button> */}
         <audio
           ref={audioPlayer}
           src={songs.MRC_Branding.src}
@@ -119,7 +119,7 @@ const AudioPlayer = () => {
           <p>{songs.MRC_Branding.paragraph}</p>
         </div>
         <div className={styles.buttons}>
-          <button className={styles.forwardBackward} onClick={backThirty}>
+          <button className={styles.forwardBackward} onClick={backTen}>
             <img src={leftArrow.src} />
           </button>
           <button onClick={togglePlayPause} className={styles.playPause}>
