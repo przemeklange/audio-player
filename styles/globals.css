@@ -1,9 +1,11 @@
 html,
 body {
+  --background: #fafafa;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--background);
 }
 
 a {
@@ -11,6 +13,14 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "LangeFonts";
+  src: url("../font/GT-Sectra-Fine-Regular-Trial.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "LangeFonts";
 }
